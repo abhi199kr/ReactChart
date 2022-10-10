@@ -9,19 +9,12 @@ import Linechart1 from './Linechart1'
 
 const Dashboar = () => {
   return (
-    // <div className='color-red-500 mt-50 p-10 bg-red-300 font-bold'>
-    //   welcome
-    //   <Header/>
-    // </div>
+   
     <>
         
         
         <Linechart1/>
-        {/* <Bar2/> */}
         
-        
-       
-        {/* <Footer/> */}
 
         
     </>

@@ -75,8 +75,8 @@ for (let i = 0; i < 7; i++) {
 }
 const Linechart1 = () => {
   return (
-    <div className='flex flex-col md:flex-row'>
-    <div className='w- '>
+    <div className=' grid h-screen place-items-center grid-cols-1 md:grid-cols-2 gap- lg:grid-cols-3 xl:grid-cols-4 '>
+    <div className=''>
     <h1 className='text-center'>Data</h1>
     <LineChart width={300} height={300} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -92,17 +92,18 @@ const Linechart1 = () => {
             
       
     </div>
-    <div className='w-fit'>
+    <div className=''>
     <Areachart/>
+    
 
     </div>
     
 
    
-  <div>
+  <div className=''>
     <Bar2/>
   </div>
-  <div>
+  <div className=''>
     <Piechart/>
     
   </div>

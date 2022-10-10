@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
 import drop from "../Assets/Images/drop.png"
+import Drop from './Drop'
+import Drop1 from './Drop1'
 const Header = () => {
     const [open,close]=useState(false)
     function click(){
@@ -15,11 +17,13 @@ const Header = () => {
   return (
    <>
     <div className='flex bg-blue-600 h-14 py-2'>
-    <div className='w-1/3 pl-10'>
+    <div className='w-1/3 pl-10 md:invisible'>
 
-  <img src={drop} alt="" className='w-10' />
+  {/* <img src={drop} alt="" className='w-10' /> */}
+  <Drop1/>
 
     </div>
+    {/* <div><Drop1/></div> */}
     <div className='w-1/3 '>
     
     <div class="flex justify-center">
@@ -35,10 +39,10 @@ const Header = () => {
     </div>
     <div className='hidden md:block ml-auto'>
     
-    <button className='border-2 bg-red-600 text-white font-bold  border-white px-7 rounded-full  py-2'>
+    <Link to="/login"><button className='border-2 bg-red-600 text-white font-bold  border-white px-7 rounded-full  py-2'>
         Register/SignIn
 
-        </button>
+        </button></Link>
 
     </div>
 
