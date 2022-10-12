@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       {/* <Realdashboard/> */}
+      <div>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Realdashboard/> }></Route>
@@ -23,6 +24,7 @@ function App() {
 
       </Routes>
     </BrowserRouter>
+    </div>
     </>
   );
 }
