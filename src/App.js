@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Dashboar from './Components/Dashboar';
 import Realdashboard from './Components/Realdashboard';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes, Route } from "react-router-dom";
 import Login from './Components/Login';
 import PiechartDescription from './Components/PiechartDescription';
 import Areachardesc from './Components/Areachardesc';
@@ -13,7 +13,7 @@ function App() {
     <>
       {/* <Realdashboard/> */}
       <div>
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route path="/" element={<Realdashboard/> }></Route>
         <Route path="/login" element={<Login/>}></Route>
@@ -23,7 +23,7 @@ function App() {
       
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </div>
     </>
   );
