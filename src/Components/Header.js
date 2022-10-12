@@ -37,7 +37,7 @@ const Header = () => {
 
         </button></Link>
         <Link to="/login"><button className='border-2 bg-red-600 text-white font-bold  border-white px-7 rounded-full  py-2'>
-        Register
+        Registers
 
         </button></Link>
 
