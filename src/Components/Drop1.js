@@ -4,26 +4,6 @@ import { Fragment } from 'react'
 import {Link} from 'react-router-dom'
 import drop from "../Assets/Images/drop.png"
 
-const solutions = [
-  {
-    name: 'Insights',
-    description: 'Measure actions your users take',
-    href: '##',
-    icon: IconOne,
-  },
-  {
-    name: 'Automations',
-    description: 'Create your own targeted content',
-    href: '##',
-    icon: IconTwo,
-  },
-  {
-    name: 'Reports',
-    description: 'Keep track of your growth',
-    href: '##',
-    icon: IconThree,
-  },
-]
 
 export default function Drop1() {
   return (
@@ -34,15 +14,15 @@ export default function Drop1() {
             <Popover.Button
               className={`
                 ${open ? '' : 'text-opacity-90'}
-                group inline-flex items-center rounded-md  -ml-4 place-items-end mr-auto py-2 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                group inline-flex   -ml-4`}
             >
               {/* <span>Solutions</span> */}
-              <img src={drop} alt="" />
-              <ChevronDownIcon
+              <img src={drop} alt=""  className='-mx-10'/>
+              {/* <ChevronDownIcon
                 className={`${open ? '' : 'text-opacity-70'}
                   ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80`}
                 aria-hidden="true"
-              />
+              /> */}
             </Popover.Button>
             <Transition
               as={Fragment}
@@ -55,76 +35,56 @@ export default function Drop1() {
             >
               <Popover.Panel className="absolute left-1/4 z-10 mt-3  max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
                 <div className=" rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                  <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
-                    {/* {solutions.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                      >
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                          <item.icon aria-hidden="true" />
-                        </div>
-                        <div className="ml-4">
-                          <p className="text-sm font-medium text-gray-900">
-                            {item.name}
-                          </p>
-                          <p className="text-sm text-gray-500">
-                            {item.description}
-                          </p>
-                        </div>
-                      </a>
-                    ))} */}
-                  </div>
+                  
                   {/* <Link to="/login"><p className='bg-gray-50'>Login</p></Link> */}
-                  <div className="bg-gray-50 p-4">
+                  <div className="bg-blue-900 p-4">
                     <a
                       href="/login"
                       className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
                       <span className="flex items-center">
-                        <span className="text-sm font-medium text-gray-900">
+                        <span className="text-sm font-medium text-white">
                           Login
                         </span>
                       </span>
                       
                     </a>
                   </div>
-                  <div className="bg-gray-50 p-4">
+                  <div className="bg-blue-900 p-4">
                     <a
                       href="/login"
                       className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
                       <span className="flex items-center">
-                        <span className="text-sm font-medium text-gray-900">
+                        <span className="text-sm font-medium text-white">
                             Signup
                         </span>
                       </span>
                       
                     </a>
                   </div>
-                  <div className="bg-gray-50 p-4">
-                    <a
-                      href="/login"
+                  <div className="bg-blue-900 p-4">
+                   <p
+                      
                       className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
                       <span className="flex items-center">
-                        <span className="text-sm font-medium text-gray-900">
-                          Dashboard
-                        </span>
+                      <Link to="/areachart"> <a href="#" class="flex items-center p-2 text-base font-normal text-white hover:text-blue-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+               <span class="flex-1 ml-3 whitespace-nowrap">Area Chart</span>
+            </a></Link>
                       </span>
                       
-                    </a>
+                    </p>
                   </div>
-                  <div className="bg-gray-50 p-4">
+                  <div className="bg-blue-900 p-4">
                     <a
                       href="/login"
                       className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
                       <span className="flex items-center">
-                        <span className="text-sm font-medium text-gray-900">
-                          Documentation
-                        </span>
+                      <Link to="/barchart"> <a href="#" class="flex items-center p-2 text-base font-normal text-white hover:text-blue-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+               <span class="flex-1 ml-3 whitespace-nowrap">Bar Graph</span>
+            </a></Link>
                       </span>
                       
                     </a>

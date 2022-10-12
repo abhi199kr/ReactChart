@@ -1,30 +1,22 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
-import drop from "../Assets/Images/drop.png"
-import Drop from './Drop'
+
+
 import Drop1 from './Drop1'
 const Header = () => {
-    const [open,close]=useState(false)
-    function click(){
-        return(
-
-         close(!open),
-         console.log(open)
-        
-        )
-    }
+    
  
   return (
    <>
-    <div className='flex bg-blue-600 h-14 py-2'>
+    <div className='flex bg-blue-900 h-14 py-2'>
     <div className='w-1/3 pl-10 md:invisible'>
 
-  {/* <img src={drop} alt="" className='w-10' /> */}
-  <Drop1/>
+  {/* Drop Components */}
+      <Drop1/>
 
     </div>
-    {/* <div><Drop1/></div> */}
-    <div className='w-1/3 '>
+   
+    <div className='md:w-11/12 place-items-end md:ml-auto '>
     
     <div class="flex justify-center">
   <div class="mb-3 xl:w-96">
@@ -37,12 +29,19 @@ const Header = () => {
 </div>
 
     </div>
-    <div className='hidden md:block ml-auto'>
+    <div className='hidden md:block ml-auto '>
+    <div className='flex'>
     
-    <Link to="/login"><button className='border-2 bg-red-600 text-white font-bold  border-white px-7 rounded-full  py-2'>
-        Register/SignIn
+    <Link to="/login"><button className='border-2 mx-2 bg-red-600 text-white font-bold  border-white px-7 rounded-full  py-2'>
+        SignIn
 
         </button></Link>
+        <Link to="/login"><button className='border-2 bg-red-600 text-white font-bold  border-white px-7 rounded-full  py-2'>
+        Register
+
+        </button></Link>
+
+        </div>
 
     </div>
 

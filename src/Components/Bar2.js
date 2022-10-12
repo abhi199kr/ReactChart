@@ -11,7 +11,7 @@ const data = [
 
 const Bar2 = () => {
   return (
-    <BarChart width={300} height={300} data={data}>
+    <BarChart width={280} height={300} data={data} padding-right={10}>
     <Bar dataKey="students" fill="blue" />
     <CartesianGrid stroke="#ccc" />
     <XAxis dataKey="name" />

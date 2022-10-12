@@ -9,7 +9,7 @@ const Realdashboard = () => {
     <>
     <Header/>
     <div className='flex'>
-    <div className='hidden md:block w-/10'>
+    <div className='hidden md:block w-2/10'>
         <Sidebar/>
     </div>
     <div>

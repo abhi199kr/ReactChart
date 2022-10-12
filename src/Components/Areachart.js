@@ -79,9 +79,9 @@ const Areachart = () => {
     top: 20, right: 20, bottom: 20, left: 20,
   }}
 >
-  <XAxis dataKey="day" />
+  <XAxis dataKey="day" className='' />
   <YAxis />
-  <Area dataKey="temperature" stroke="#8884d8" fill="#8884d8" />
+  <Area dataKey="temperature" stroke="#337AFF" fill="#E83845" />
   <Tooltip />
 </AreaChart>
       

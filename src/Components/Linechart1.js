@@ -75,24 +75,26 @@ for (let i = 0; i < 7; i++) {
 }
 const Linechart1 = () => {
   return (
-    <div className=' grid h-screen place-items-center grid-cols-1 md:grid-cols-2 gap- lg:grid-cols-3 xl:grid-cols-4 '>
-    <div className=''>
-    <h1 className='text-center'>Data</h1>
+    <div className='pb-20 px-2 pt-5 grid  place-items-center grid-cols-1 md:grid-cols-2 gap-2 lg:grid-cols-3 xl:grid-cols-4 '>
+    
+    <div className='bg-purple-900 text-white hover:bg-pink-700 py-10 hover:py-12'>
+    
     <LineChart width={300} height={300} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="x" />
           <YAxis yAxisId="left-axis" />
           <YAxis yAxisId="right-axis" orientation="right" />
           <Line yAxisId="left-axis" type="dashed" dataKey="y" 
-           stroke="pink"/>
+           stroke="green"/>
           <Line yAxisId="right-axis" type="dashed" dataKey="z" 
-          stroke="blue" />
+          stroke="red" />
         </LineChart>
                 
             
       
     </div>
-    <div className=''>
+    <div className='bg-amber-400 text-white hover:bg-pink-700 py-10 hover:py-12'>
+    
     <Areachart/>
     
 
@@ -100,10 +102,10 @@ const Linechart1 = () => {
     
 
    
-  <div className=''>
+  <div className='bg-indigo-900 text-white hover:bg-pink-700 py-10 hover:py-12'>
     <Bar2/>
   </div>
-  <div className=''>
+  <div className=' md:pb-0 bg-green-900 text-white hover:bg-pink-700 py-14 hover:py-12'>
     <Piechart/>
     
   </div>

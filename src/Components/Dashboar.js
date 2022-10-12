@@ -1,18 +1,17 @@
 import React from 'react'
-import Bar2 from './Bar2'
-import Doughnut1 from './Doughnut1'
+import Carousel from './Carousel'
 
-
-import Footer from './Footer'
-import Header from './Header'
 import Linechart1 from './Linechart1'
 
+    
+
 const Dashboar = () => {
+  
   return (
    
     <>
-        
-        
+        <h1 className='text-center font-bold text-3xl text-orange-500 px-2  pt-10'>WELCOME TO REACT CHART</h1>
+        <Carousel/>
         <Linechart1/>
         
 
